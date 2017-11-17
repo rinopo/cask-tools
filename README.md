@@ -1,9 +1,16 @@
 # cask-tools
-Set up bash environment for dealing with homebrew-cask
+Set up bash environment for dealing with homebrew-cask.
+
+Just read [init.sh](https://github.com/rinopo/cask-tools/blob/master/init.sh) to see what it does.
+
+## Prerequisite
+
+- `homebrew` already installed.
+- [rubocop-cask](https://github.com/caskroom/rubocop-cask) already installed.
 
 ## Usage
 
-1. Clone this repository to the local path you like.
+1. Clone this repository to a local path of your choice (here `~/Scripts/`).
 
 ```sh-session
 $ cd ~/Scripts/
