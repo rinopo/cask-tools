@@ -17,5 +17,5 @@ alias cask-guide="open https://github.com/caskroom/homebrew-cask/blob/master/doc
 alias cask-token="generate_cask_token"
 function cask-sha() { shasum -a 256 "$@" | tee /dev/tty | perl -pe 's/^(\w+).*\n/$1/' | pbcopy; }
 alias cask-sparkle="find_sparkle_appcast"
-alias cask-checkpoint="brew cask _appcast_checkpoint --calculate"
+function cask-checkpoint() { brew cask _appcast_checkpoint --calculate "$@" | tee /dev/tty | pbcopy; }
 alias cask-audit="brew cask audit --download"
