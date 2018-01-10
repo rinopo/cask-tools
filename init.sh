@@ -15,7 +15,7 @@ git status
 
 alias cask-guide="open https://github.com/caskroom/homebrew-cask/blob/master/doc/development/adding_a_cask.md"
 alias cask-token="generate_cask_token"
-alias cask-sha="shasum -a 256 | tee /dev/tty | perl -pe 's/^(\w+).*\n/$1/' | pbcopy"
+function cask-sha() { shasum -a 256 "$@" | tee /dev/tty | perl -pe 's/^(\w+).*\n/$1/' | pbcopy; }
 alias cask-sparkle="find_sparkle_appcast"
 alias cask-checkpoint="brew cask _appcast_checkpoint --calculate"
 alias cask-audit="brew cask audit --download"
